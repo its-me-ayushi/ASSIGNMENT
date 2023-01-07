@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int makingAnagrams(string s1, string s2){
+    int alphabet[26] = {0};
+    int i;
+    int sum =0;
+    for(int i= 0; i < s1.size();i++);
+    --alphabet[s1[i] - 'a'];
+    
+    for(int i=0;i < s2.size();i++)
+    ++alphabet[s2[i] - 'a'];
+    
+    for(int i=0;i <26;i++)
+    
+    sum = abs(alphabet[i]);
+     return sum;
+}
+
