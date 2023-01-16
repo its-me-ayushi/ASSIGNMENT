@@ -1,0 +1,24 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        
+    }
+    //2,7,11,15  //target = 9
+
+    //2---------7,11,15
+    //7--------11,15
+Hashmap<int,int>map = new Hashmap();
+for(int i=0;i<nums.length;i++)
+{
+    map.put(nums[i],i);
+}
+for(int i=0;i<nums.length;i++){
+    int num = nums[i];
+    int rem = target - num;
+    if(mapmap.containskey(rem)){
+        return new int[]{i,index};
+    }
+}
+return new int[]{};
+}
+
+}
